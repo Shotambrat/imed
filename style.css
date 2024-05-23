@@ -507,6 +507,11 @@ select:focus {
   cursor: default;
 }
 
+#btn-size{
+    margin-top: 30px;
+    width: 100%;
+}
+
 *,
 *::before,
 *::after {
@@ -830,6 +835,7 @@ body {
 }
 
 .our-partners {
+<<<<<<< HEAD
   margin: 28px 10px 0 10px;
   background-color: #4d4d4d;
   color: #ffffff;
@@ -839,6 +845,19 @@ body {
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
+=======
+    margin: 28px 10px 0 10px;
+    background-color: #4d4d4d;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 12px;
+    margin: 0 auto;
+    width: 97%;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+>>>>>>> master
 }
 
 .our-partners > h3 {
@@ -1801,6 +1820,95 @@ a.swiper-card {
   object-fit: contain;
 }
 
+
+
+.why-we {
+    position: relative;
+    border-radius: 13px;
+    background: #FFF;
+    margin: 0 auto;
+    width: 97%;
+    padding: 70px 0px 44px 50px;
+}
+.why-red{
+    text-align: left;
+    font-weight: 600;
+    color: #ED3237;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.responsive-image {
+    width: 95%;
+    height: auto;
+    display: block;
+    margin-top: 2%;
+}
+
+.text-overlay {
+    position: absolute;
+    font-weight: 600;
+    padding: 0px;
+    border-radius: 5px;
+    font-size: 58px;
+    top: 0px;
+    bottom: auto;
+}
+
+@media (max-width: 1350px) {
+    .text-overlay {
+        font-size: 38px;
+    }
+}
+@media (max-width: 1120px) {
+    .text-overlay {
+        font-size: 28px;
+    }
+}
+@media (max-width: 992px) {
+    .why-we{
+        padding: 25px 25px 20px 25px;
+    }
+    .text-overlay {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 700px) {
+    .why-we{
+        margin: 0 auto;
+    }
+    .text-overlay {
+        top: 10px;
+        bottom: auto;
+    }
+    .image-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .transfer{
+        display: none;
+    }
+    .responsive-image {
+        content: url('/imed/mobayl.png'); 
+        width: 320px;
+        height: auto;
+        display: block;
+        margin-top: 20%;
+    }
+    .text-overlay {
+        font-size: 35px;
+    }
+}
+@media (max-width: 475px) {
+    .text-overlay {
+        font-size: 22px;
+    }
+}
 .partners-slider {
   position: relative;
 }
@@ -5100,10 +5208,17 @@ textarea.invalid {
 }
 
 .container {
+<<<<<<< HEAD
   max-width: 1980px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 30px;
+=======
+    max-width: 1980px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+>>>>>>> master
 }
 
 @media (max-width: 768px) {
@@ -6536,12 +6651,22 @@ a.text-dark:hover {
 }
 
 .container-two-person {
+<<<<<<< HEAD
   position: relative;
 }
 .image-person {
   display: block;
   width: 98%;
   margin: 0 auto;
+=======
+    position: relative; 
+    margin: 50px 0 50px 0;
+}
+.image-person {
+    display: block;
+    width: 97%;
+    margin: 0 auto;
+>>>>>>> master
 }
 .person-name-who {
   font-size: 8px;
@@ -6572,6 +6697,7 @@ a.text-dark:hover {
 .person2 {
   right: 0;
 }
+<<<<<<< HEAD
 .tooltip {
   position: absolute;
   bottom: 30%;
@@ -6587,6 +6713,40 @@ a.text-dark:hover {
   display: block;
 }
 
+=======
+.tooltip-1 {
+    position: absolute;
+    bottom: 20%;
+    left: 40%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    display: none;
+    font-size: 11px;
+}
+.tooltip-2 {
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    display: none;
+    font-size: 11px;
+}
+.person:hover .tooltip-1{
+    display: block;
+}
+.person:hover .tooltip-2{
+    display: block;
+}
+
+
+
+
+>>>>>>> master
 @media (max-width: 428px) {
   .fa-clock {
     margin-top: 10px;
