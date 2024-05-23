@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3ad51d936c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+
+    <title>Imed</title>
+  </head>
+  <body>
+    <aside class="aside">
+      <div class="sidebar">
+        <div class="sidebar-logo-wrap">
+          <a href="http://127.0.0.1:8000" class="logo">
+            <img
+              src="https://imed.uz/storage/settings/May2023/hvaJKYrTOtkGqMQ9rtc4.png"
+              alt="Intermed Innovation"
+              class="logo-img"
+            />
+          </a>
+          <i class="fa-solid fa-xmark header-full-close" aria-hidden="true"></i>
+        </div>
+        <nav class="nav">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="http://127.0.0.1:8000/" class="nav-link">
+                <span>Главная</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="http://127.0.0.1:8000/categories" class="nav-link">
+                <span>Каталог</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="http://127.0.0.1:8000/pages/3-o-kompanii"
+                class="nav-link"
+              >
+                <span>О компании</span>
+                <svg>
+                  <use xlink:href="#icon-arrow"></use>
+                </svg>
+              </a>
+              <ul class="nav-item-list">
+                <li>
+                  <a href="http://127.0.0.1:8000/licenses">Лицензии</a>
+                </li>
+                <li>
+                  <a href="http://127.0.0.1:8000/vacancies">Вакансии</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="http://127.0.0.1:8000/partners" class="nav-link">
+                <span>Партнеры</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="http://127.0.0.1:8000/news" class="nav-link">
+                <span>Новости</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="http://127.0.0.1:8000/contacts" class="nav-link">
+                <span>Контакты</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="http://127.0.0.1:8000/bestsellers" class="nav-link">
+                <span>Хиты продаж</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="sidebar-search mt-5">
+          <form action="http://127.0.0.1:8000/search">
+            <div class="btn-group px-4">
+              <input type="text" name="q" />
+              <button type="submit" class="btn btn-standard px-4">
+                <img src="./settings/mingcute_search-line.png" alt="Search" />
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="phone-container">
+          <div class="phone">
+            <div>
+              <img class="phone-img" src="./settings/Symbol.png" alt="Phone" />
+            </div>
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <a href="tel:998781504747">+998 78 150-47-47</a>
+          </div>
+          <button class="btn btn-order" type="button">Заказать звонок</button>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="client drawer">
+        <div class="drawer-faq">
+          <div class="drawer-question">
+            <p class="drawer-question_name-active">Область</p>
+            <img src="./Settings/VectorRed.png" alt="dropdown icon red" />
+            <!-- <img src="./Settings/Dropdown.png" alt="dropdown icon"> -->
+          </div>
+          <ul class="drawer-answer">
+            <li>Ташкент</li>
+            <li>Ташкентская область</li>
+            <li>Самаркандская область</li>
+            <li>Хорезмская область</li>
+            <li>Республика Каракалпакстан</li>
+            <li>Кашкадарьинская область</li>
+            <li>Сурхандарьинская область</li>
+            <li>Джизакская область</li>
+            <li>Андижанская область</li>
+            <li>Наманганская область</li>
+            <li>Сырдарьинская область</li>
+            <li>Бухарская область</li>
+            <li>Навоийская область</li>
+            <li>Ферганская область</li>
+          </ul>
+        </div>
+        <div class="drawer-faq">
+          <div class="drawer-question">
+            <p class="drawer-question_name">Категория</p>
+            <!-- <img src="./Settings/VectorRed.png" alt="dropdown icon red"> -->
+            <img src="./Settings/Dropdown.png" alt="dropdown icon" />
+          </div>
+          <ul class="drawer-answer"></ul>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer-block">
+              <a class="logo">
+                <img
+                  src="/storage/settings/May2023/hvaJKYrTOtkGqMQ9rtc4.png"
+                  alt="Intermed Innovation"
+                />
+              </a>
+              <p></p>
+
+              <div class="social">
+                <div class="social-item social-item-tg">
+                  <a
+                    href="https://t.me/intermedtrade"
+                    title="Telegram"
+                    target="_blank"
+                    rel="nofollow"
+                    ><i class="fa-brands fa-telegram" aria-hidden="true"></i
+                  ></a>
+                </div>
+                <div class="social-item social-item-fb">
+                  <a
+                    href="https://www.facebook.com/intermedinnovation"
+                    title="Facebook"
+                    target="_blank"
+                    rel="nofollow"
+                    ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i
+                  ></a>
+                </div>
+                <div class="social-item social-item-inst">
+                  <a
+                    href="https://www.instagram.com/intermed.mindray/"
+                    title="Instagram"
+                    target="_blank"
+                    rel="nofollow"
+                    ><i class="fa-brands fa-instagram" aria-hidden="true"></i
+                  ></a>
+                </div>
+                <div class="social-item social-item-yt">
+                  <a
+                    href="https://www.youtube.com/@intermedinnovation9644/videos"
+                    title="Youtube"
+                    target="_blank"
+                    rel="nofollow"
+                    ><i class="fa-brands fa-youtube" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-block">
+              <h4 class="footer-block-title">Kompaniya</h4>
+              <ul class="footer-block-nav">
+                <li class="footer-block-item">
+                  <a
+                    href="http://localhost:3000/uz/pages/3-o-kompanii"
+                    class="footer-block-link"
+                    >О компании</a
+                  >
+                </li>
+                <li class="footer-block-item">
+                  <a
+                    href="http://localhost:3000/uz/partners"
+                    class="footer-block-link"
+                    >Партнеры</a
+                  >
+                </li>
+                <li class="footer-block-item">
+                  <a
+                    href="http://localhost:3000/uz/contacts"
+                    class="footer-block-link"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-block footer-block-nav-mobile">
+              <h4 class="footer-block-title">Katalog</h4>
+              <ul class="footer-block-nav">
+                <li class="footer-block-item">
+                  <a
+                    href="http://localhost:3000/uz/categories/1-uzd-oborudovanie"
+                    class="footer-block-link"
+                    >УЗД оборудование</a
+                  >
+                </li>
+                <li class="footer-block-item">
+                  <a
+                    href="http://localhost:3000/uz/categories/5-zizneobespecenie-i-monitoring-pacienta"
+                    class="footer-block-link"
+                    >Жизнеобеспечение и мониторинг пациента</a
+                  >
+                </li>
+                <li class="footer-block-item">
+                  <a
+                    href="http://localhost:3000/uz/categories/16-laboratornoe-oborudovanie"
+                    class="footer-block-link"
+                    >Лабораторное оборудование</a
+                  >
+                </li>
+                <li class="footer-block-item">
+                  <a
+                    href="http://localhost:3000/uz/categories/25-reagenty-i-rasxodnye-materialy"
+                    class="footer-block-link"
+                    >Реагенты и расходные материалы</a
+                  >
+                </li>
+                <li class="footer-block-item">
+                  <a
+                    href="http://localhost:3000/uz/categories/31-radiologiia"
+                    class="footer-block-link"
+                    >Радиология</a
+                  >
+                </li>
+                <li class="footer-block-item">
+                  <a
+                    href="http://localhost:3000/uz/categories/34-veterinarnoe-oborudovanie"
+                    class="footer-block-link"
+                    >Ветеринарное оборудование</a
+                  >
+                </li>
+              </ul>
+              <div class="footer-link">
+                <a href="http://localhost:3000/uz/categories"
+                  >Hammasini ko‘rish</a
+                >
+                <i
+                  class="fa-sharp fa-solid fa-arrow-right"
+                  aria-hidden="true"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="footer-website-rights">
+            <p>2024 © Intermed Innovation. Barcha huquqlar himoyalangan</p>
+            <a
+              href="https://inweb.uz/"
+              target="_blank"
+              class="footer-website-rights-dev"
+            >
+              Sayt yaratuvchi -
+              <img
+                src="http://localhost:3000/img/icons/inweb.svg"
+                alt="InWeb"
+              />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+    <!-- <script src="./js/custom-.js"></script> -->
+    <script src="./js/custom.js"></script>
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"
+    ></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  </body>
+</html>

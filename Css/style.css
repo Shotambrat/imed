@@ -2675,6 +2675,164 @@ span {
     margin-top: 16px;
 }
 
+/* Client section. All styles new changes not need */ 
+.client-title {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.client-drawer {
+    margin-bottom: 25px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.client-drawer > img {
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.client-clinic_card {
+    padding: 14px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.clinic-card_img {
+    width: 100%;
+}
+
+.client-clinic_card > a {
+    text-decoration: none;
+    color: #242424;
+}
+
+.clinic-card_name{
+    margin-top: 18px;
+}
+
+.clinic-card_address {
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #666666;
+}
+
+.clinic-card_description {
+    margin-top: 16px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.client-back {
+    margin-bottom: 20px;
+    padding: 12px 44px;
+    background-color: #E0E0E0;
+    border: none;
+    border-radius: 11.2px;
+    -webkit-border-radius: 11.2px;
+    -moz-border-radius: 11.2px;
+    -ms-border-radius: 11.2px;
+    -o-border-radius: 11.2px;
+}
+
+.clinic-gallery_title {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.clinic-card_gallery {
+    margin-top: 25px;
+}
+
+.clinic-card_gallery > img {
+   width: 100%;
+}
+
+.clinic-gallery_buttons {
+    text-align: center;
+}
+
+.clinic-gallery_button {
+    width: 14px;
+    height: 14px;
+    border: none;
+    background-color: #D9D9D9;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.clinic-gallery_button-active {
+    background-color: #ED3237;
+}
+
+
+.drawer {
+    background-color: #ffffff;
+    padding: 0 25px;
+}
+
+.drawer-line {
+    margin: 30px 0;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.drawer-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+}
+
+.drawer-question_name-active {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ED3237;
+}
+
+.drawer-question_name{
+    font-size: 24px;
+    font-weight: 700;
+    color: #242424;
+}
+
+.drawer-question > img {
+    width: 16px;
+    height: 12px;
+}
+
+.drawer-answer {
+    padding-bottom: 35px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.drawer-answer > li {
+    margin-top: 32px;
+    font-weight: 500;
+    color: #242424;
+    list-style-type: none;
+}
+
 /* Новости */
 .newsPage {
     padding: 40px 30px;
@@ -6180,10 +6338,6 @@ a.text-dark:hover {
 .person:hover .tooltip {
     display: block;
 }
-
-
-
-
 
 @media (max-width: 428px) {
     .fa-clock {
