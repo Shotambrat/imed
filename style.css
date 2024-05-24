@@ -973,6 +973,7 @@ body {
   overflow: hidden;
   padding-bottom: 12px;
   height: 100%;
+  border: 1px solid #666;
 }
 
 .swiper-slide-card h4 {
@@ -1014,10 +1015,12 @@ a.swiper-card {
 }
 
 .berut-slider{
+
     position: relative;
 }
 
 .popular-slider {
+  height: 100%;
   position: relative;
 }
 
@@ -2653,8 +2656,9 @@ hr {
 }
 
 .contacts-info-adress {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .contacts-page-offices-info {
@@ -2915,6 +2919,7 @@ hr {
   background-color: #ffffff;
   padding: 0 25px;
   overflow-y: scroll;
+  transition: all 0.3s;
 }
 
 .drawer-active {
@@ -3028,17 +3033,18 @@ hr {
   }
 
   .each-card_items {
-    display: grid;
-    grid-template-columns: auto auto;
-
+    display: flex;
+    justify-content: space-between;
   }
 
   .clinic-card_img {
+    flex: 1;
     margin-right: 16px;
     width: 17rem;
   }
 
   .each-clinic_card-items {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -3056,17 +3062,29 @@ hr {
     padding: 20px 24px;
   }
 
+  .clinic-card_image {
+    flex: 1;
+    margin-right: 1rem;
+  }
+
+  .clinic-card_items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
   .client-back {
     margin: 20px;
   }
 
   .each-card_items {
+    flex: 1;
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
   }
 
   .clinic-card_img {
+    flex: 1;
     margin-right: 16px;
     width: 100%;
   }
@@ -3146,14 +3164,6 @@ hr {
     width: 70%;
   }
 
-  .client-clinic_card {
-    display: flex;
-  }
-
-  .clinic-card_items {
-    width: 70%;
-  }
-
   .clinic-card_img {
     width: 90%;
     margin-right: 30px;
@@ -3171,18 +3181,15 @@ hr {
     width: 90%;
   }
 
-  .clinic-card_items {
-    margin: 0 16px;
-  }
-
   .clinic-card_address {
     margin-top: 24px;
   }
 }
 
 @media (min-width: 1440px) {
+
   .each-clinic_card-items {
-    width: 85%;
+    padding-right: 2rem;
   }
 
   .clinic-card_img {
@@ -3195,9 +3202,30 @@ hr {
     width: 70%;
     margin-right: 60px;
   }
+
+  .clinic-card_description {
+    margin-top: 16px;
+  }
+
+  .clinic-card_image {
+    flex: 2;
+  }
+
+  .clinic-card_image > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .clinic-card_items {
+    flex: 3;
+  }
 }
 
 @media (min-width: 1700px) {
+  .each-clinic_card-items {
+    padding: 1rem 2rem 1rem 0;
+  }
+
   .clinic-card_img {
     width: 65%;
   }
@@ -3206,6 +3234,22 @@ hr {
 @media (min-width: 1800px) {
   .each-clinic_card-items {
     width: 60%;
+  }
+
+  .clinic-card_address {
+    font-size: 1rem;
+  }
+
+  .clinic-card_description {
+    font-size: 18px;
+    margin-top: 24px;
+  }
+  
+}
+
+@media (min-width: 2000px) {
+  .each-clinic_card-items {
+    padding-right: 5rem;
   }
 }
 
@@ -4504,9 +4548,9 @@ hr {
     margin: 0 auto;
   }
 
-  .contacts-item p {
-    font-size: 12px;
-  }
+    /* .contacts-item p {
+        font-size: 12px;
+    } */
 
   .contacts-page-details-map-container iframe {
     display: block;
@@ -4522,10 +4566,10 @@ hr {
     justify-content: center;
   }
 
-  .btn-contacts {
-    width: 100%;
-    max-width: 250px;
-  }
+    .btn-contacts {
+        width: 100%;
+        font-size: 16px;
+    }
 
   .btn-news {
     width: 85%;
@@ -4851,7 +4895,6 @@ hr {
 
     .btn-contacts {
         width: 100%;
-        max-width: 250px;
     }
 
     .btn-news {
@@ -5250,7 +5293,6 @@ textarea.invalid {
 
 .container {
     max-width: 1980px;
-    margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
 }
@@ -5261,7 +5303,7 @@ textarea.invalid {
   }
 
   .content {
-    padding: 12px 13px 45px 14px;
+    padding: 0;
   }
 
   .conference-title {
@@ -5363,7 +5405,7 @@ textarea.invalid {
   overflow: hidden;
   border-radius: 11.866px;
   background: #fff;
-  padding: 40px 30px 70px 30px;
+  padding: 0;
 }
 
 .main-pages {
@@ -5382,6 +5424,7 @@ textarea.invalid {
 .content h4,
 .content h5,
 .content h6 {
+  margin-left: 10px;
   margin-bottom: 15px;
 }
 
@@ -5456,7 +5499,6 @@ textarea.invalid {
   height: auto;
   margin-bottom: 12px;
   border-radius: 10px;
-  border: 1px solid #666;
 }
 
 .conference-title {
@@ -6778,6 +6820,20 @@ a.text-dark:hover {
   }
 }
 
+@media (max-width: 450px) {
+    .person-name{
+        font-size: 10px;
+    }
+    .tooltip-1 {
+        padding: 5px;
+        font-size: 10px;
+    }
+    .tooltip-2 {
+        padding: 5px;
+        font-size: 10px;
+    }
+}
+
 @media screen and (max-width: 428px) {
   .header-mobile {
     border-radius: 12px 12px 0px 0px;
@@ -6830,11 +6886,62 @@ a.text-dark:hover {
   color: white;
 }
 
+.content-video{
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    padding: 40px 30px 0px 30px;
+}
+
+.video-container{
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+} 
+
+@media (max-width: 1250px) {
+    .video-container{
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 540px) {
+    .video-container{
+        width: 100%;
+        height: 250px;
+        margin: 0 auto;
+        padding: 0px 0px 0px 0px
+    }
+}
+
+@media (max-width: 390px) {
+    .content-video{
+        padding: 0px 0px 0px 0px;
+
+    }
+    .video-container{
+        height: 200px;
+    }
+}
+
 @media (max-width: 870px) {
-  .contacts-page-offices-items {
-    flex-direction: column;
-    padding: 25px;
-  }
+    .container-two-person{
+        margin: 20px 0 30px 0;
+    }
+    .contacts-page-offices-items {
+        flex-direction: column;
+        padding: 25px;
+    }
 
   .contacts-page-offices-info-flag {
     /* display: block; */
@@ -6971,5 +7078,39 @@ a.text-dark:hover {
 
   .content img {
     width: 100%;
+  }
+}
+
+
+.drawer {
+  /* display: none; */
+  justify-content: left
+}
+
+.drawer-active {
+  display: block;
+}
+
+.drawer-answer {
+  display: none;
+}
+
+.drawer-answer.block {
+  display: block;
+}
+
+.drawer-close_button {
+  position: absolute;
+  top: -8px;
+  right: 0px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  .drawer-close_button {
+      display: none;
   }
 }
