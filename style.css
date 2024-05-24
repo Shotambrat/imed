@@ -3030,7 +3030,7 @@ hr {
   .each-card_items {
     display: grid;
     grid-template-columns: auto auto;
-    padding: 20px;
+
   }
 
   .clinic-card_img {
@@ -3062,6 +3062,8 @@ hr {
 
   .each-card_items {
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .clinic-card_img {
@@ -3084,11 +3086,6 @@ hr {
     font-size: 12.78px;
     font-weight: 500;
     line-height: 18.3px;
-  }
-
-  .each-card_items {
-    display: flex;
-    justify-content: space-between;
   }
 
   .clinic-card_name {
