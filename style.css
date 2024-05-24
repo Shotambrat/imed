@@ -5301,7 +5301,7 @@ textarea.invalid {
   .container {
     padding: 0 20px;
   }
-
+  
   .content {
     padding: 0;
   }
@@ -5408,6 +5408,10 @@ textarea.invalid {
   padding: 0;
 }
 
+.news-content{
+  padding: 40px 40px 60px 30px;
+}
+
 .main-pages {
   display: flex;
   flex-direction: row;
@@ -5495,6 +5499,13 @@ textarea.invalid {
 }
 
 .content img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+  border-radius: 10px;
+}
+
+.news-content img {
   width: 50%;
   height: auto;
   margin-bottom: 12px;
@@ -6701,6 +6712,7 @@ a.text-dark:hover {
   object-fit: cover;
 }
 
+
 @media screen and (min-width: 990px) and (max-width: 1440px) {
   .categories-item {
     width: 49%;
@@ -6772,6 +6784,9 @@ a.text-dark:hover {
   font-size: 11px;
 }
 @media (max-width: 768px) {
+  .news-content{
+    padding: 12px 13px 45px 14px;
+  }
   .person-name-who {
     display: block;
   }
