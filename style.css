@@ -5312,11 +5312,6 @@ textarea.invalid {
   .container {
     padding: 0 20px;
   }
-
-  .content {
-    padding: 12px 13px 45px 14px;
-  }
-
   .conference-title {
     font-size: 20px;
     margin-bottom: 19px;
@@ -5416,6 +5411,10 @@ textarea.invalid {
   overflow: hidden;
   border-radius: 11.866px;
   background: #fff;
+}
+
+#news-content{
+  padding: 40px 43px 65px 30px;
 }
 
 .main-pages {
@@ -6782,6 +6781,9 @@ a.text-dark:hover {
   font-size: 11px;
 }
 @media (max-width: 768px) {
+  #news-content{
+    padding: 12px 13px 40px 13px;
+  }
   .person-name-who {
     display: block;
   }
