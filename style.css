@@ -2845,10 +2845,6 @@ hr {
   color: #242424;
 }
 
-.clinic-card_name {
-  margin-top: 18px;
-}
-
 .clinic-card_address {
   margin-top: 8px;
   font-size: 13px;
@@ -2989,6 +2985,10 @@ hr {
   list-style-type: none;
 }
 
+.clinic-card_img > img{
+  width: 100%;
+}
+
 .clinic-gallery {
     display: none;
 }
@@ -3027,6 +3027,23 @@ hr {
     font-weight: 700;
   }
 
+  .each-card_items {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+  }
+
+  .clinic-card_img {
+    margin-right: 16px;
+    width: 17rem;
+  }
+
+  .each-clinic_card-items {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -3044,19 +3061,16 @@ hr {
   }
 
   .each-card_items {
-    display: flex;
-    justify-content: space-between;
     padding: 20px;
   }
 
   .clinic-card_img {
-    width: 20rem;
-    margin-right: 24px;
+    margin-right: 16px;
+    width: 100%;
   }
 
-  .each-clinic_card-items {
-    display: flex;
-    align-items: center;
+  .clinic-card_img > img {
+    width: 100%;
   }
 
   .clinic-card_address {
@@ -3075,10 +3089,6 @@ hr {
   .each-card_items {
     display: flex;
     justify-content: space-between;
-  }
-
-  .each-card_items > img {
-    width: 70%;
   }
 
   .clinic-card_name {
@@ -3128,8 +3138,6 @@ hr {
   .clinic-gallery_images > img {
     width: 100%
   }
-
-  
 }
 
 @media (min-width: 1380px) {
@@ -3150,17 +3158,16 @@ hr {
   }
 
   .clinic-card_img {
-    width: 25rem;
+    width: 90%;
     margin-right: 30px;
   }
 
   .clinic-card_name {
     font-size: 36px;
-    margin-top: 24px;
   }
 
   .clinic-card_description {
-    margin: 20px 0;
+    margin: 10px 0;
   }
 
   .each-card_items > img {
@@ -3171,22 +3178,37 @@ hr {
     margin: 0 16px;
   }
 
-  .clinic-card_name {
-    margin-top: 28px;
-  }
-
   .clinic-card_address {
     margin-top: 24px;
-  }
-
-  .clinic-card_description {
-    margin: 28px 0;
   }
 }
 
 @media (min-width: 1440px) {
+  .each-clinic_card-items {
+    width: 85%;
+  }
+
   .clinic-card_img {
-    width: 30rem;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .clinic-card_img {
+    width: 70%;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .clinic-card_img {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .each-clinic_card-items {
+    width: 60%;
   }
 }
 
