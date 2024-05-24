@@ -2662,6 +2662,7 @@ hr {
 .contacts-info-adress {
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 .contacts-page-offices-info {
@@ -4078,9 +4079,9 @@ hr {
         margin: 0 auto;
     }
 
-    .contacts-item p {
+    /* .contacts-item p {
         font-size: 12px;
-    }
+    } */
 
     .contacts-page-details-map-container iframe {
         display: block;
@@ -4098,7 +4099,7 @@ hr {
 
     .btn-contacts {
         width: 100%;
-        max-width: 250px;
+        font-size: 16px;
     }
 
     .btn-news {
@@ -4425,7 +4426,6 @@ hr {
 
     .btn-contacts {
         width: 100%;
-        max-width: 250px;
     }
 
     .btn-news {
@@ -6353,6 +6353,20 @@ a.text-dark:hover {
     }
 }
 
+@media (max-width: 450px) {
+    .person-name{
+        font-size: 10px;
+    }
+    .tooltip-1 {
+        padding: 5px;
+        font-size: 10px;
+    }
+    .tooltip-2 {
+        padding: 5px;
+        font-size: 10px;
+    }
+}
+
 @media screen and (max-width: 428px) {
     .header-mobile {
         border-radius: 12px 12px 0px 0px;
@@ -6405,7 +6419,58 @@ a.text-dark:hover {
     color: white;
 }
 
+.content-video{
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    padding: 40px 30px 0px 30px;
+}
+
+.video-container{
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+} 
+
+@media (max-width: 1250px) {
+    .video-container{
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 540px) {
+    .video-container{
+        width: 100%;
+        height: 250px;
+        margin: 0 auto;
+        padding: 0px 0px 0px 0px
+    }
+}
+
+@media (max-width: 390px) {
+    .content-video{
+        padding: 0px 0px 0px 0px;
+
+    }
+    .video-container{
+        height: 200px;
+    }
+}
+
 @media (max-width: 870px) {
+    .container-two-person{
+        margin: 20px 0 30px 0;
+    }
     .contacts-page-offices-items {
         flex-direction: column;
         padding: 25px;
