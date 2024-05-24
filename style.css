@@ -973,6 +973,7 @@ body {
   overflow: hidden;
   padding-bottom: 12px;
   height: 100%;
+  border: 1px solid #666;
 }
 
 .swiper-slide-card h4 {
@@ -5303,7 +5304,6 @@ textarea.invalid {
 
 .container {
   max-width: 1980px;
-  margin-left: auto;
   margin-right: auto;
   padding: 0 20px;
 }
@@ -5416,7 +5416,6 @@ textarea.invalid {
   overflow: hidden;
   border-radius: 11.866px;
   background: #fff;
-  padding: 40px 30px 70px 30px;
 }
 
 .main-pages {
@@ -5436,6 +5435,7 @@ textarea.invalid {
 .content h5,
 .content h6 {
   margin-bottom: 15px;
+  margin-left: 25px;
 }
 
 .content ul,
@@ -5509,7 +5509,6 @@ textarea.invalid {
   height: auto;
   margin-bottom: 12px;
   border-radius: 10px;
-  border: 1px solid #666;
 }
 
 .conference-title {
