@@ -973,6 +973,7 @@ body {
   overflow: hidden;
   padding-bottom: 12px;
   height: 100%;
+  border: 1px solid #666;
 }
 
 .swiper-slide-card h4 {
@@ -1014,10 +1015,12 @@ a.swiper-card {
 }
 
 .berut-slider{
+
     position: relative;
 }
 
 .popular-slider {
+  height: 100%;
   position: relative;
 }
 
@@ -2919,6 +2922,7 @@ hr {
   background-color: #ffffff;
   padding: 0 25px;
   overflow-y: scroll;
+  transition: all 0.3s;
 }
 
 .drawer-active {
@@ -5231,7 +5235,6 @@ textarea.invalid {
 
 .container {
     max-width: 1980px;
-    margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
 }
@@ -5242,7 +5245,7 @@ textarea.invalid {
   }
 
   .content {
-    padding: 12px 13px 45px 14px;
+    padding: 0;
   }
 
   .conference-title {
@@ -5344,7 +5347,7 @@ textarea.invalid {
   overflow: hidden;
   border-radius: 11.866px;
   background: #fff;
-  padding: 40px 30px 70px 30px;
+  padding: 0;
 }
 
 .main-pages {
@@ -5363,6 +5366,7 @@ textarea.invalid {
 .content h4,
 .content h5,
 .content h6 {
+  margin-left: 10px;
   margin-bottom: 15px;
 }
 
@@ -5437,7 +5441,6 @@ textarea.invalid {
   height: auto;
   margin-bottom: 12px;
   border-radius: 10px;
-  border: 1px solid #666;
 }
 
 .conference-title {
@@ -6952,5 +6955,39 @@ a.text-dark:hover {
 
   .content img {
     width: 100%;
+  }
+}
+
+
+.drawer {
+  /* display: none; */
+  justify-content: left
+}
+
+.drawer-active {
+  display: block;
+}
+
+.drawer-answer {
+  display: none;
+}
+
+.drawer-answer.block {
+  display: block;
+}
+
+.drawer-close_button {
+  position: absolute;
+  top: -8px;
+  right: 0px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  .drawer-close_button {
+      display: none;
   }
 }
