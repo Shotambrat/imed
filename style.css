@@ -2081,6 +2081,7 @@ a.swiper-card {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  padding-left: 100px;
 }
 
 .footer-website-rights p {
@@ -2962,6 +2963,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   padding-top: 35px;
+  margin-bottom: 30px;
 }
 
 .drawer-question_name-active {
@@ -6031,6 +6033,7 @@ a.text-dark:hover {
   color: #000000;
   top: 0;
   left: 0;
+  backdrop-filter: blur(15px);
 }
 
 .result-description {
@@ -6919,6 +6922,10 @@ a.text-dark:hover {
   .footer .logo {
     text-align: center;
   }
+}
+
+.pass {
+  margin-top: 2rem
 }
 
 @media (max-width: 992px) {
