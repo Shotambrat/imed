@@ -637,7 +637,7 @@ body {
   }
 
   .our-service_cards {
-    max-height: 360px;
+    max-height: 450px;
     overflow-y: scroll;
     display: block;
   }
@@ -2077,7 +2077,7 @@ a.swiper-card {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .footer-website-rights p {
@@ -2399,6 +2399,15 @@ hr {
   color: #242424;
 }
 
+.licenses-item .btn, .licenses-item .license-descr {
+  transition: all 0.5s ease-in-out;
+}
+
+.licenses-item img.visible {
+  opacity: 1;
+  max-height: 1000px; /* Достаточно большое значение для отображения изображения */
+}
+
 .licenses {
   margin: 20px 0;
   padding: 20px 0;
@@ -2412,22 +2421,85 @@ hr {
   margin-top: 32px;
 }
 
-.licenses-item {
-  width: calc(33.3333333333% - 10.6666666667px);
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  padding: 16px;
-  border: none;
-  border-radius: 12px;
-  position: relative;
-  overflow: hidden;
-}
+  .licenses-item:hover .license-descr {
+    color: red;
+  }
 
-.licenses-item:hover .licenses-item-cover {
-  opacity: 1;
-  visibility: visible;
-}
+  .licenses-item > button {
+    margin-top: 20px;
+  }
+
+  .licenses-item {
+    width: calc(33.3333333333% - 10.6666666667px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px 16px 16px 16px;
+    border: none;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  .vacancies-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px 16px 30px 30px;
+    border: none;
+    border-radius: 12px;
+    position: relative;
+  }
+
+  .vacancies-list__photo {
+    max-width: 320px;
+    margin-right: 50px;
+    height: auto;
+  }
+
+  .vacancies-list__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .vacancies-list__text > h3 {
+    font-size: 26px;
+    margin-bottom: 2rem;
+  }
+
+  .vacancies-list__text > p {
+    font-size: 18px;
+  }
+
+  @media (max-width: 690px) {
+    .vacancies-list {
+      flex-direction: column;
+      padding: 16px 16px 16px 16px;
+    }
+
+    .vacancies-list__photo {
+      margin-bottom: 2rem;
+      margin-right: 0;
+    }
+
+    .vacancies-list__text > h3 {
+      font-size: 16px;
+      margin-bottom: 1rem;
+    }
+  
+    .vacancies-list__text > p {
+      font-size: 14px;
+    }
+  }
+/* .licenses-item:hover{
+  color: red;
+} */
 
 .licenses-item img {
   width: 100%;
@@ -2440,48 +2512,16 @@ hr {
 @media (max-width: 1320px) {
   .licenses-item img {
     max-height: 200px;
+
   }
 }
 
 .licenses-item p {
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: bold;
+  font-size: 20px;
   line-height: 130%;
   text-align: center;
   color: #242424;
-}
-
-.licenses-item-cover {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.3s ease;
-}
-
-.licenses-item-cover span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background-color: #ed3237;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.licenses-item-cover span svg {
-  width: 20px;
-  height: 20px;
-  stroke: #fff;
 }
 
 .vacancies {
@@ -4420,8 +4460,12 @@ hr {
   }
 
   .licenses-item {
-    width: 255px;
-    justify-content: flex-start;
+    width: 320px;
+    justify-content: space-between;
+  }
+
+  .licenses-item > button {
+    margin-top: 50px;
   }
 
   .licenses-item p {
@@ -6448,7 +6492,7 @@ a.text-dark:hover {
 
   .our-partners > p {
     margin: 36px 10%;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
   }
 }
