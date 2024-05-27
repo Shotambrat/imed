@@ -1334,7 +1334,7 @@ a.swiper-card {
 }
 
 .news-item-cover {
-  height: 60px;
+  height: 55px;
   overflow-y: hidden;
   display: flex;
   justify-content: space-between;
@@ -7059,6 +7059,9 @@ a.text-dark:hover {
 }
 
 @media (max-width: 992px) {
+  .news-item-cover {
+    height: 60px;
+  }
   #vakancy-content{
     padding: 15px 15px;
   }
