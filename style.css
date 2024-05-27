@@ -2895,14 +2895,16 @@ hr {
 
 .client-each_card {
   padding: 14px;
-  margin-bottom: 15px;
   background-color: #ffffff;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+  margin: 0px 0px 15px 30px;
 }
+
+
 
 .clinic-card_img {
   width: 100%;
@@ -3597,6 +3599,7 @@ hr {
   .catalogue-menu.show {
     opacity: 1;
     visibility: visible;
+    z-index: 99;
   }
 }
 
@@ -5279,6 +5282,9 @@ textarea.invalid {
 @media (max-width: 992px) {
   .hero {
     height: calc(100vh - 108px);
+  }
+  .client-each_card{
+    margin: 0px 0px 15px 0px;
   }
 }
 
