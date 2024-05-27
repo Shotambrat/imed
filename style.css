@@ -801,6 +801,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  margin-bottom: 12px;
 }
 
 @media (max-width: 576px) {
@@ -966,6 +967,15 @@ body {
   display: block;
   margin: 0 auto;
 }
+
+img#swiper-slide-pop-card {
+  max-width: 100%;
+}
+
+#swiper-slide-card{
+  padding-bottom: 0px;
+}
+
 
 .swiper-slide-card {
   background-color: #fff;
@@ -2678,6 +2688,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 100px;
 }
 
 .contacts-page-logo {
@@ -2695,6 +2706,7 @@ hr {
 .contacts-info-adress {
   display: flex;
   flex-direction: column;
+  gap: 7px;
 }
 
 .contacts-page-offices-info {
@@ -2934,6 +2946,7 @@ hr {
   padding: 12px 44px;
   background-color: #e0e0e0;
   border: none;
+  cursor: pointer;
   border-radius: 11.2px;
   -webkit-border-radius: 11.2px;
   -moz-border-radius: 11.2px;
@@ -3254,7 +3267,7 @@ hr {
   }
 
   .clinic-card_address {
-    margin-top: 24px;
+    margin-top: 10px;
   }
 }
 
@@ -4314,7 +4327,6 @@ hr {
 
   .categories-wrapper {
     flex-wrap: wrap;
-    width: auto;
     gap: 15px;
     justify-content: center;
   }
@@ -4625,7 +4637,6 @@ hr {
 
   .btn-contacts {
     width: 100%;
-    max-width: 250px;
   }
 
   .btn-news {
@@ -4952,7 +4963,6 @@ hr {
 
   .btn-contacts {
     width: 100%;
-    max-width: 250px;
   }
 
   .btn-news {
@@ -7036,7 +7046,7 @@ a.text-dark:hover {
 }
 
 .pass {
-  margin-top: 2rem
+  margin-top: 2rem;
 }
 
 @media (max-width: 992px) {
