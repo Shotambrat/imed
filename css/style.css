@@ -5335,32 +5335,6 @@ textarea.invalid {
   margin-bottom: 30px;
 }
 
-@media (max-width: 1700px) {
-  #katalog-text-oborud{
-    font-size: 20px;
-  }
-}
-@media (max-width: 1500px) {
-  #katalog-text-oborud{
-    font-size: 17px;
-  }
-}
-@media (max-width: 1310px) {
-  #katalog-text-oborud{
-    font-size: 15px;
-  }
-}
-@media (max-width: 980px) {
-  #katalog-text-oborud{
-    font-size: 19px;
-  }
-}
-@media (max-width: 450px) {
-  #katalog-text-oborud{
-    font-size: 14px;
-  }
-}
-
 @media (max-width: 1400px) {
   .hero-title {
     font-size: 56px;
