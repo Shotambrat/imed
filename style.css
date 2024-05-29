@@ -2456,30 +2456,48 @@ hr {
     overflow: hidden;
   }
 
-
   .vacancies-list {
     width: 100%;
     display: flex;
+    flex-direction: column; /* Ensure the items are stacked vertically */
     align-items: center;
-    background-color: #fff;
-    padding: 30px 16px 30px 30px;
+    padding: 30px 16px;
     border: none;
     border-radius: 12px;
     position: relative;
-  }
+}
 
-  .vacancies-list__photo {
-    max-width: 320px;
-    margin-right: 50px;
+.vacancies-item {
+    gap: 30px;
+    display: flex;
+    width: 100%;
+    /* align-items: center; */
+    margin-bottom: 20px; /* Add margin between items */
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow for better separation */
+}
+
+.vacancies-list__photo {
+    max-width: 100px; /* Adjust the size as needed */
+    margin-right: 20px;
     height: auto;
-  }
+}
 
-  .vacancies-list__text {
+.vacancies-list__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
-  }
+    margin-left: 20px;
+}
+
+.text-gray{
+  margin-top: 2%;
+  color: #666;
+  font-size: 15px;
+}
 
   .vacancies-list__text > h3 {
     font-size: 26px;
@@ -2489,30 +2507,40 @@ hr {
   .vacancies-list__text > p {
     font-size: 18px;
   }
+  .text-dark{
+    font-size: 30px;
+  }
 
-  @media (max-width: 690px) {
-    .vacancies-list {
-      flex-direction: column;
-      padding: 16px 16px 16px 16px;
+  @media (max-width: 980px) {
+    .vacancies-item {
+        gap: 0px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 21px 21px 45px 21px;
     }
 
     .vacancies-list__photo {
-      margin-bottom: 2rem;
       margin-right: 0;
+      margin-bottom: 20px;
+      max-width: 150px;
     }
+
+    .vacancies-list__text {
+        align-items: center;
+        text-align: center;
+    }
+    .text-dark{
+      font-size: 20px;
+    }
+}
 
     .vacancies-list__text > h3 {
       font-size: 16px;
       margin-bottom: 1rem;
     }
   
-    .vacancies-list__text > p {
-      font-size: 14px;
-    }
-  }
-/* .licenses-item:hover{
-  color: red;
-} */
 
 .licenses-item img {
   width: 100%;
