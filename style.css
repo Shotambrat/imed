@@ -1588,7 +1588,7 @@ a.swiper-card {
     grid-template-rows: auto auto auto;
   }
   .scheme-title{
-    margin: 10px;
+    margin: 10px 10px 20px 10px;
   }
 
 
@@ -1622,7 +1622,7 @@ a.swiper-card {
     margin: 0px 0px 0px 53px;
   }
   #scheme-description-unik{
-    margin-top: 45px;
+    margin-bottom: 20px;
   }
 
   .scheme-content {
@@ -3191,6 +3191,10 @@ hr {
   .clinic-card_img {
     margin-right: 24px;
   }
+  #clinic-card-img{
+    width: 350px;
+    height: 220px;
+  }
 
   .each-clinic_card-items {
     display: flex;
@@ -3315,7 +3319,7 @@ hr {
   }
 
   .our-clients {
-    width: 70%;
+    width: 86%;
   }
 
   .clinic-card_items {
@@ -3351,7 +3355,7 @@ hr {
 
   .clinic-card_img {
     margin-right: 60px;
-    flex: 4;
+    flex: 2;/*было 4*/
   }
 
   .clinic-card_image {
@@ -7178,11 +7182,6 @@ a.text-dark:hover {
   margin-top: 2rem;
 }
 
-@media (max-width: 740px) {
-  .catalogue-product-info {
-    width: 100%;
-  }
-}
 @media (max-width: 992px) {
   .catalogue-product-info {
     width: 70%;
@@ -7229,6 +7228,11 @@ a.text-dark:hover {
     width: 100%;
   }
 }
+@media (max-width: 740px) {
+  .catalogue-product-info {
+    width: 100%;
+  }
+}
 @media (max-width: 980px) {
   .vacancies-list{
     padding: 0;
@@ -7250,6 +7254,6 @@ a.text-dark:hover {
 }
 @media (min-width: 1471px) {
   .scheme-title {
-    margin: 0px;
+    margin: 0px 0px 20px 0px;
   }
 }
