@@ -2606,7 +2606,6 @@ hr {
   line-height: 130%;
   text-align: center;
   color: #242424;
-  height: 10rem;
 }
 
 .vacancies {
@@ -4558,6 +4557,7 @@ hr {
 
   .licenses-item p {
     margin-top: 0;
+    height: 4rem;
   }
 
   .catalogue-wrapper {
@@ -4859,7 +4859,7 @@ hr {
 
   .licenses-item p {
     margin-top: 0;
-    height: 6rem;
+    height: 4rem;
   }
 }
 
@@ -5224,6 +5224,11 @@ hr {
   .licenses-item p {
     margin-top: 0;
   }
+
+  .licenses-item p {
+    margin-top: 0;
+    height: 0;
+}
 }
 
 /* display: block;
@@ -5972,7 +5977,7 @@ a.text-dark:hover {
   }
 
   .licenses-item p {
-    height: 6rem;
+    height: 5rem;
   }
 }
 
@@ -6898,7 +6903,7 @@ a.text-dark:hover {
   }
 
   .licenses-item p {
-    height: 10rem;
+    height: 5rem;
   }
 }
 
