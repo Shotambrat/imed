@@ -982,11 +982,15 @@ img#swiper-slide-pop-card {
 
 .swiper-slide-card {
   background-color: #fff;
-  border-radius: 12px;
+  border-radius: 15px;
   overflow: hidden;
   padding-bottom: 12px;
   height: 100%;
   border: 1px solid #666;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
 .swiper-slide-card h4 {
@@ -1793,6 +1797,7 @@ a.swiper-card {
 
 /* Наши партнеры */
 @media (min-width: 768px) {
+
   .partners {
     padding-left: 15px;
     padding-right: 15px;
@@ -1882,8 +1887,14 @@ a.swiper-card {
     font-size: 49px;
   }
 }
+@media (max-width: 1520px) {
+  .text-overlay {
+    font-size: 49px;
+  }
+}
 @media (max-width: 1350px) {
   .text-overlay {
+    width: 63%;
     width: 63%;
     font-size: 38px;
   }
@@ -1896,8 +1907,11 @@ a.swiper-card {
 @media (max-width: 992px) {
   .why-we {
     padding: 20px 5px 15px 5px;
+    padding: 20px 5px 15px 5px;
   }
   .text-overlay {
+    font-size: 40px;
+    line-height: 47px;
     font-size: 40px;
     line-height: 47px;
   }
@@ -1932,6 +1946,10 @@ a.swiper-card {
   }
   .text-overlay {
     font-size: 35px;
+    line-height: 32px;
+    width: 100%;
+    text-align: center;
+    line-height: 32px;
     line-height: 32px;
     width: 100%;
     text-align: center;
@@ -2470,6 +2488,7 @@ hr {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    align-self: flex-start;
     background-color: #fff;
     padding: 30px 16px 16px 16px;
     border: none;
@@ -2499,6 +2518,7 @@ hr {
     border-radius: 12px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow for better separation */
+    text-decoration: none;
 }
 
 .vacancies-list__photo {
@@ -2586,6 +2606,7 @@ hr {
   line-height: 130%;
   text-align: center;
   color: #242424;
+  height: 10rem;
 }
 
 .vacancies {
@@ -4444,7 +4465,7 @@ hr {
   }
 
   .licenses-item {
-    width: 33%;
+    width: 48%;
     justify-content: flex-start;
   }
 
@@ -4842,6 +4863,7 @@ hr {
 
   .licenses-item p {
     margin-top: 0;
+    height: 6rem;
   }
 }
 
@@ -5952,6 +5974,10 @@ a.text-dark:hover {
     object-fit: cover;
     height: 100%;
   }
+
+  .licenses-item p {
+    height: 6rem;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -6470,6 +6496,10 @@ a.text-dark:hover {
     /* height: 300px; */
   }
 
+  .our-partners {
+    padding: 0 1rem;
+  }
+
   .our-partners_logos {
     margin: 0 20px;
   }
@@ -6552,7 +6582,7 @@ a.text-dark:hover {
   }
 
   .our-partners > p {
-    margin: 30px 14%;
+    margin: 30px 13%;
   }
 
   .our-partners_logos {
@@ -6869,6 +6899,10 @@ a.text-dark:hover {
   .categories-item-1,
   .categories-item-6 {
     width: 49%;
+  }
+
+  .licenses-item p {
+    height: 10rem;
   }
 }
 
