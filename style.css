@@ -1580,6 +1580,13 @@ a.swiper-card {
       ". . scheme-img scheme-img"
       "line line line line";
   }
+  #scheme-update-left{
+    grid-template-rows: auto auto auto;
+  }
+  .scheme-title{
+    margin: 10px;
+  }
+
 
   .scheme-content_right {
     display: grid;
@@ -1602,12 +1609,16 @@ a.swiper-card {
   }
 
   .scheme-title_text {
-    font-size: 36px;
+    font-size: 34px;
+    line-height: 30px;
   }
 
   .scheme-description {
     max-width: 310px;
-    margin-left: 53px;
+    margin: 0px 0px 0px 53px;
+  }
+  #scheme-description-unik{
+    margin-top: 45px;
   }
 
   .scheme-content {
@@ -1632,7 +1643,7 @@ a.swiper-card {
   .scheme-content_right {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
       "scheme-img scheme-img . . "
       "scheme-img scheme-img title title "
@@ -1648,7 +1659,7 @@ a.swiper-card {
 
   .scheme-description {
     max-width: 350px;
-    margin-left: 61px;
+    margin-left: 71px;
     font-size: 18px;
   }
 }
@@ -1866,8 +1877,14 @@ a.swiper-card {
   display: none;
 }
 
+@media (max-width: 1520px) {
+  .text-overlay {
+    font-size: 49px;
+  }
+}
 @media (max-width: 1350px) {
   .text-overlay {
+    width: 63%;
     font-size: 38px;
   }
 }
@@ -1878,10 +1895,11 @@ a.swiper-card {
 }
 @media (max-width: 992px) {
   .why-we {
-    padding: 25px 25px 20px 25px;
+    padding: 20px 5px 15px 5px;
   }
   .text-overlay {
-    font-size: 44px;
+    font-size: 40px;
+    line-height: 47px;
   }
 }
 
@@ -1914,6 +1932,10 @@ a.swiper-card {
   }
   .text-overlay {
     font-size: 35px;
+    line-height: 32px;
+    width: 100%;
+    text-align: center;
+    line-height: 32px;
   }
 }
 @media (max-width: 475px) {
@@ -2148,7 +2170,7 @@ hr {
 }
 
 .catalogue-product-info__title {
-  font-size: 2.8em;
+  font-size: 2.4em;
   margin-bottom: 1rem;
 }
 
@@ -2506,6 +2528,7 @@ hr {
 
   .vacancies-list__text > p {
     font-size: 18px;
+    line-height: 24px;
   }
   .text-dark{
     font-size: 30px;
@@ -2569,6 +2592,7 @@ hr {
   margin: 20px 0;
   padding: 20px 30px;
 }
+
 
 .vacancies-box {
   width: 600px;
@@ -3284,7 +3308,7 @@ hr {
   }
 
   .clinic-card_name {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .clinic-card_description {
@@ -3293,10 +3317,6 @@ hr {
 
   .each-card_items > img {
     width: 90%;
-  }
-
-  .clinic-card_items {
-    margin: 0 16px;
   }
 
   .clinic-card_address {
@@ -4059,6 +4079,7 @@ hr {
     padding: 24px;
     border-radius: 12px;
     margin-top: 24px;
+    width: 90%;
   }
 }
 
@@ -5335,6 +5356,12 @@ textarea.invalid {
   margin-bottom: 30px;
 }
 
+@media (min-width: 1700px) {
+  #katalog-text-oborud{
+    font-size: 23px;
+  }
+}
+
 @media (max-width: 1700px) {
   #katalog-text-oborud{
     font-size: 20px;
@@ -5634,6 +5661,7 @@ textarea.invalid {
   font-size: 29px;
   font-weight: 700;
   margin-bottom: 32px;
+  line-height: 30px;
 }
 
 .conference-details {
@@ -6772,7 +6800,6 @@ a.text-dark:hover {
   text-decoration: none;
   opacity: 0;
   padding-bottom: 5px;
-  transition: opacity 0.5s ease-in-out;
 }
 
 .categories-item-descr a,
@@ -7112,7 +7139,15 @@ a.text-dark:hover {
   margin-top: 2rem;
 }
 
+@media (max-width: 740px) {
+  .catalogue-product-info {
+    width: 100%;
+  }
+}
 @media (max-width: 992px) {
+  .catalogue-product-info {
+    width: 70%;
+  }
   .news-item-cover {
     height: 60px;
   }
@@ -7153,5 +7188,29 @@ a.text-dark:hover {
 
   .content img {
     width: 100%;
+  }
+}
+@media (max-width: 980px) {
+  .vacancies-list{
+    padding: 0;
+  }
+  .vacancies {
+    padding: 0px 0px;
+  }
+  .vacancies-list__text > p {
+    text-align: left;
+  }
+  .vacancies-item{
+    padding: 20px 6px;
+  }
+}
+@media (max-width: 500px) {
+  .vacancies-list__text > p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1471px) {
+  .scheme-title {
+    margin: 0px;
   }
 }
