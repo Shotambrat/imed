@@ -1588,7 +1588,7 @@ a.swiper-card {
     grid-template-rows: auto auto auto;
   }
   .scheme-title{
-    margin: 10px;
+    margin: 10px 10px 20px 10px;
   }
 
 
@@ -1622,7 +1622,7 @@ a.swiper-card {
     margin: 0px 0px 0px 53px;
   }
   #scheme-description-unik{
-    margin-top: 45px;
+    margin-bottom: 20px;
   }
 
   .scheme-content {
@@ -7249,6 +7249,6 @@ a.text-dark:hover {
 }
 @media (min-width: 1471px) {
   .scheme-title {
-    margin: 0px;
+    margin: 0px 0px 20px 0px;
   }
 }
