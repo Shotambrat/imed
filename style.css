@@ -4540,12 +4540,6 @@ hr {
   }
 }
 
-@media (min-width: 1280px) {
-  .licenses-item p {
-    height: 10rem;
-  }
-}
-
 @media screen and (min-width: 429px) and (max-width: 767px) {
   .header-full-close {
     display: block;
@@ -6856,6 +6850,10 @@ a.text-dark:hover {
   .categories-item-1,
   .categories-item-6 {
     width: 49%;
+  }
+
+  .licenses-item p {
+    height: 10rem;
   }
 }
 
