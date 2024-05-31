@@ -3171,6 +3171,10 @@ hr {
   .clinic-card_img {
     margin-right: 24px;
   }
+  #clinic-card-img{
+    width: 350px;
+    height: 220px;
+  }
 
   .each-clinic_card-items {
     display: flex;
@@ -3295,7 +3299,7 @@ hr {
   }
 
   .our-clients {
-    width: 70%;
+    width: 86%;
   }
 
   .clinic-card_items {
@@ -3331,7 +3335,7 @@ hr {
 
   .clinic-card_img {
     margin-right: 60px;
-    flex: 4;
+    flex: 2;/*было 4*/
   }
 
   .clinic-card_image {
@@ -7139,11 +7143,6 @@ a.text-dark:hover {
   margin-top: 2rem;
 }
 
-@media (max-width: 740px) {
-  .catalogue-product-info {
-    width: 100%;
-  }
-}
 @media (max-width: 992px) {
   .catalogue-product-info {
     width: 70%;
@@ -7187,6 +7186,11 @@ a.text-dark:hover {
   }
 
   .content img {
+    width: 100%;
+  }
+}
+@media (max-width: 740px) {
+  .catalogue-product-info {
     width: 100%;
   }
 }
