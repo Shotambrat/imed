@@ -982,11 +982,15 @@ img#swiper-slide-pop-card {
 
 .swiper-slide-card {
   background-color: #fff;
-  border-radius: 12px;
+  border-radius: 15px;
   overflow: hidden;
   padding-bottom: 12px;
   height: 100%;
   border: 1px solid #666;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
 .swiper-slide-card h4 {
