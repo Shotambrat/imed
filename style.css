@@ -1538,11 +1538,14 @@ a.swiper-card {
 }
 
 .scheme-img {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
   grid-area: scheme-img;
 }
 
 .scheme-img_equipment {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -1553,7 +1556,7 @@ a.swiper-card {
 
 .scheme-line {
   grid-area: line;
-  margin-top: 48px;
+  margin-top: 28px;
   width: 100%;
   height: 2px;
   background-color: #bdbdbd;
@@ -1633,27 +1636,29 @@ a.swiper-card {
 @media (min-width: 1200px) {
   .scheme-content_left {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(4, 1fr); */
     grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: auto 100px 240px auto;
     grid-template-areas:
-      ". . scheme-img scheme-img"
-      "title title scheme-img scheme-img"
-      "description description scheme-img scheme-img"
-      ". . scheme-img scheme-img"
-      ". . scheme-img scheme-img"
-      "line line line line";
+    ". scheme-img scheme-img ."
+    "title scheme-img scheme-img ."
+    "description scheme-img scheme-img ."
+    ". scheme-img scheme-img ."
+    ". scheme-img scheme-img ."
+    "line line line line";
   }
 
   .scheme-content_right {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(4, 1fr); */
     grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: auto 115px 205px auto;
     grid-template-areas:
-      "scheme-img scheme-img . . "
-      "scheme-img scheme-img title title "
-      "scheme-img scheme-img description description "
-      "scheme-img scheme-img . . "
-      "scheme-img scheme-img . . "
+      ". scheme-img scheme-img . "
+      ". scheme-img scheme-img title "
+      ". scheme-img scheme-img description "
+      ". scheme-img scheme-img . "
+      ". scheme-img scheme-img . "
       "line line line line";
   }
 
@@ -1663,29 +1668,29 @@ a.swiper-card {
 
   .scheme-description {
     max-width: 350px;
-    margin-left: 71px;
+    margin-left: 75px;
     font-size: 18px;
   }
 }
 
 @media (min-width: 1450px) {
   .scheme-title_number {
-    width: 69.63px;
-    height: 69.63px;
-    font-size: 33.56px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
     line-height: 40.61px;
   }
 
   .scheme-title_text {
-    font-size: 40.27px;
+    font-size: 33px;
     line-height: 48.73px;
   }
 
   .scheme-description {
     max-width: 440px;
-    margin-left: 85.63px;
-    font-size: 22.7px;
+    font-size: 20px;
     line-height: 27.47px;
+    margin-left: 245px;
   }
 }
 
@@ -3153,6 +3158,12 @@ hr {
 }
 
 @media (min-width: 993px) {
+  .scheme-img_equipment {
+    width: 100%;
+  }
+  .scheme-img{
+    margin: 0;
+  }
   .client {
     display: flex;
     justify-content: space-between;
@@ -6804,10 +6815,11 @@ a.text-dark:hover {
   left: 0;
 }
 
-.text-and-text:hover {
-  opacity: 1;
-  background-color: rgb(255, 255, 255, 0.8);
-  transition: 0.5s all;
+.categories-item:hover .text-and-text,
+.categories-item:hover .categories-item-link {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 0.5s all;
 }
 
 /*ИЗменение цвета после наведения*/
@@ -7243,8 +7255,15 @@ a.text-dark:hover {
     font-size: 16px;
   }
 }
-@media (min-width: 1471px) {
+@media (min-width: 1450px) {
   .scheme-title {
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 20px 175px;
+    max-width: 600px;
+  }
+  .scheme-content_right > .scheme-title {
+    margin: 0px 0px 20px 120px;
+  }
+  .scheme-content_right > .scheme-description {
+    margin: 0px 0px 0px 191px;
   }
 }
