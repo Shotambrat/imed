@@ -6807,7 +6807,6 @@ a.text-dark:hover {
   opacity: 1;
   background-color: rgb(255, 255, 255, 0.8);
   transition: 0.5s all;
-  border: 1.5px solid black;
 }
 
 /*ИЗменение цвета после наведения*/
@@ -6819,9 +6818,7 @@ a.text-dark:hover {
   height: auto;
   font-weight: 700;
   font-size: 16px;
-  /* Adjusted font size */
   line-height: 20px;
-  /* Adjusted line height */
   color: #242424;
   margin-bottom: 12px;
   transition: opacity 0.5s ease-in-out;
@@ -6829,6 +6826,7 @@ a.text-dark:hover {
 
 .categories-item:hover .categories-item-title {
   opacity: 0;
+  display: none;
 }
 
 .categories-item-descr,
@@ -6867,7 +6865,9 @@ a.text-dark:hover {
   font-size: 13px;
   color: #666;
 }
-
+.categories-item:hover {
+  border: 1.5px solid black;
+}
 .photo-and-text {
   width: 60%;
   height: 100%;
