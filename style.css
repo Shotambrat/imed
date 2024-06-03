@@ -5026,7 +5026,6 @@ hr {
 
   .contacts-page-offices p {
     font-size: 14px;
-    margin-top: 8px;
   }
 
   .contacts-page-offices-items {
@@ -7011,12 +7010,6 @@ a.text-dark:hover {
 }
 .person:hover .tooltip-2 {
   display: block;
-}
-
-@media (max-width: 428px) {
-  .fa-clock {
-    margin-top: 10px;
-  }
 }
 
 @media screen and (max-width: 428px) {
