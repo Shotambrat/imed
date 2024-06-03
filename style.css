@@ -4561,7 +4561,6 @@ hr {
 
   .licenses-item p {
     margin-top: 0;
-    height: 4rem;
   }
 
   .catalogue-wrapper {
@@ -4863,7 +4862,6 @@ hr {
 
   .licenses-item p {
     margin-top: 0;
-    height: 4rem;
   }
 }
 
@@ -5230,8 +5228,7 @@ hr {
 
   .licenses-item p {
     margin-top: 0;
-    height: 0;
-}
+  }
 }
 
 /* display: block;
@@ -5979,9 +5976,6 @@ a.text-dark:hover {
     height: 100%;
   }
 
-  .licenses-item p {
-    height: 5rem;
-  }
 }
 
 @media (min-width: 1920px) {
@@ -6903,10 +6897,6 @@ a.text-dark:hover {
   .categories-item-1,
   .categories-item-6 {
     width: 49%;
-  }
-
-  .licenses-item p {
-    height: 5rem;
   }
 }
 
