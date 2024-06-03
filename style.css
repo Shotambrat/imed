@@ -2488,13 +2488,14 @@ hr {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* align-self: flex-start; */
+    align-self: flex-start;
     background-color: #fff;
     padding: 30px 16px 16px 16px;
     border: none;
     border-radius: 12px;
     position: relative;
     overflow: hidden;
+    min-height: 260px;
   }
 
   .vacancies-list {
@@ -4581,6 +4582,13 @@ hr {
     padding: 0;
   }
 }
+
+@media screen and (max-width: 695px){
+  .licenses-item{
+    height: auto;
+  }
+}
+
 
 @media screen and (min-width: 429px) and (max-width: 767px) {
   .header-full-close {
