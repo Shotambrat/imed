@@ -7114,6 +7114,12 @@ a.text-dark:hover {
   }
 }
 
+
+.grecaptcha-badge{
+  z-index: 99;
+}
+
+
 @media (max-height: 730px) {
   .phone-container {
     height: 150px;
@@ -7130,6 +7136,9 @@ a.text-dark:hover {
     text-align: center;
     font-size: 25px;
     font-weight: 700;
+  }
+  .grecaptcha-badge{
+    z-index: 0;
   }
 
   .header {
