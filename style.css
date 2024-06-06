@@ -7108,6 +7108,11 @@ a.text-dark:hover {
     white-space: nowrap;
   }
 }
+@media (max-height: 660px) {
+  .sidebar{
+    overflow-y: scroll;
+  }
+}
 
 @media (max-height: 730px) {
   .phone-container {
