@@ -217,6 +217,7 @@
   width: 12rem;
   height: 40px;
   border: 1px solid rgb(145, 145, 145);
+  margin-top: 15px;
 }
 
 @media (min-width: 1280px) {
@@ -6160,7 +6161,6 @@ a.text-dark:hover {
   height: 150px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   position: relative;
 }
