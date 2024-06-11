@@ -3158,6 +3158,19 @@ hr {
   display: none;
 }
 
+@media screen and (min-width: 700px) and (max-width: 993px) {
+  .scheme-img_equipment {
+    width: 60%;
+  }
+  .scheme-title_text{
+    font-size: 25px;
+  }
+  .scheme-description{
+    font-size: 19px;
+    line-height: 22px;
+  }
+}
+
 @media (min-width: 993px) {
   .scheme-img_equipment {
     width: 100%;
@@ -4897,7 +4910,7 @@ hr {
   }
 
   .header-title {
-    font-size: 24px;
+    font-size: 21px;
   }
 
   .header-full-close {
@@ -6173,6 +6186,7 @@ a.text-dark:hover {
 .about-logo_mobile {
   width: 100%;
   height: auto;
+  padding: 0 18%;
 }
 
 .about-company_photo {
